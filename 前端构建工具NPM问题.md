@@ -12,25 +12,26 @@
 
 然后通过以下命令验证是否成功更换源：
 
-npm config get registry 
+`npm config get registry `
 
 但是，这个方法并没有解决问题。
 
 #### 第二种：清理缓存
 
-npm cache clean --force
+`npm cache clean --force`
 
 还是不行
 
 #### 终极解决方案：换源
 
 删除老仓库源
-npm config delete registry
+
+`npm config delete registry`
 
 更换淘宝源
 
 `npm config set registry registry.npmmirror.com`
 
-重新install
+重新install问题解决
 
-npm install
+`npm install`
